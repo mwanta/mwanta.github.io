@@ -1,9 +1,9 @@
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --bg: #fdf6f0;
-  --bg2: #f5ece4;
-  --text: #2d1f1a;
-  --muted: #7a5c52;
+  --bg: #fdf9f7;
+  --bg2: #f7f0eb; 
+  --text: #2a1a14;
+  --muted: #5a3d36;
   --accent: #c4547a;
   --accent2: #9b3d6e;
   --border: rgba(180,80,120,0.2);
