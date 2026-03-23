@@ -42,7 +42,7 @@ body{font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;background:var(--bg
 section{margin-bottom:5.5rem;}
 section:last-child{margin-bottom:0;}
 
-.section-label{font-size:0.68rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1.75rem;display:block;}
+.section-label{font-size:1.0rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:1.75rem;display:block;}
 
 /* ABOUT */
 .about-body p{font-size:0.95rem;color:var(--muted);line-height:1.85;margin-bottom:1.1rem;}
