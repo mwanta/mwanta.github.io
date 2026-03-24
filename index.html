@@ -193,6 +193,7 @@
             <div class="proj-desc">I co-developed Sanguine, a multiplayer game featuring a core model, GUI view, and multiple controllers to enable seamless multi-player functionality. Leveraging object-oriented design principles ensured organized, scalable code for this complex application.</div>
             <div class="proj-tags">
               <span class="tag">Java</span>
+              <span class="tag">MVC</span>
               <span class="tag">GUI</span>
               <span class="tag">Object-Oriented Design</span>
             </div>
@@ -221,33 +222,6 @@
   </main>
 </div>
 
-<script>
-const secs = document.querySelectorAll('section[id]');
-const links = document.querySelectorAll('.side-nav a');
-const main = document.querySelector('.content');
-const obs = new IntersectionObserver(es => {
-  es.forEach(e => {
-    if(e.isIntersecting) links.forEach(a => a.classList.toggle('active', a.getAttribute('href')==='#'+e.target.id));
-  });
-},{root:main,threshold:0.35});
-secs.forEach(s=>obs.observe(s));
-
-const form = document.getElementById('contact-form');
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const data = new FormData(form);
-  const response = await fetch("https://formspree.io/f/mwvrgpde", {
-    method: 'POST',
-    body: data,
-    headers: { 'Accept': 'application/json' }
-  });
-  if (response.ok) {
-    form.reset();
-    alert('Message sent!');
-  } else {
-    alert('Something went wrong, please try again.');
-  }
-});
-</script>
+<script src="script.js"></script>
 </body>
 </html>
