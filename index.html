@@ -71,6 +71,7 @@
           <ul>
             <li>React</li>
             <li>Spring Boot</li>
+            <li>FastAPI</li>
             <li>NumPy / Pandas</li>
             <li>F Prime</li>
           </ul>
@@ -143,19 +144,27 @@
       <span class="section-label">Projects</span>
       <div class="proj-list">
 
-        <a class="proj-item" href="https://github.com/mwanta/protein-viewer">
+        <a class="proj-item" href="https://github.com/mwanta/protein-dashboard">
           <div class="proj-img">
-            <img src="images/protein-viewer.png" alt="Protein Viewer">
+            <img src="images/3d_view.png" alt="Protein Dashboard">
           </div>
           <div>
             <div class="proj-title">Protein Research Dashboard
               <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </div>
-            <div class="proj-desc">I developed a full-stack web application for searching and visualizing protein structures from 4 biomedical APIs (RCSB, UniProt, ChEMBL, Open Targets), powered by a Spring Boot REST API backend and React frontend. I implemented JWT-based user authentication alongside a PostgreSQL database to cache protein metadata, manage user accounts, and save favorites. Additionally, it utilizes Meta's ESM-2 model for protein sequence comparison. The application was containerized with Docker, deployed to AWS using Terraform, and automated via a GitHub Actions CI/CD pipeline.</div>
+            <div class="proj-desc">A full-stack protein research platform integrating four biomedical APIs (RCSB, UniProt, ChEMBL, Open Targets) 
+              via a parallel async fan-out architecture to surface protein structure, function, drug interactions, and disease associations in one interface. 
+              Features ML-powered similarity search using Meta's ESM-2 protein language model to generate sequence embeddings stored and queried with pgvector cosine 
+              similarity. Built with Spring Boot and React, with JWT authentication, a hybrid JPA/JdbcTemplate persistence layer, Docker containerization, and automated
+               deployment to AWS via Terraform and GitHub Actions CI/CD.
+            </div>
             <div class="proj-tags">
                 <span class="tag">Java</span>
+                <span class="tag">Python</span>
                 <span class="tag">Spring Boot</span>
+                <span class="tag">FastAPI</span>
                 <span class="tag">React</span>
+                <span class="tag">pgvector</span>
                 <span class="tag">REST API</span>
                 <span class="tag">PostgreSQL</span>
                 <span class="tag">Docker</span>
