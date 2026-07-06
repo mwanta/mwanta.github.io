@@ -46,8 +46,8 @@
 
     <section id="about">
       <div class="about-body">
-        <p>I'm Meredith, a second-year <strong>Computer Science and Neuroscience</strong> student at Northeastern University. I'm passionate about the intersection of software and the brain, especially computational modeling of neural systems.</p>
-        <p>Through <strong>co-op experiences</strong> in research labs and software development, I've built full-stack applications, automated complex molecular dynamics pipelines, and developed programs to simulate molecular behavior. I prioritize clean, scalable code and thrive working across interdisciplinary teams.</p>
+        <p>I'm Meredith, a third-year student studying <strong>Computer Science and Neuroscience</strong>, with a minor in <strong>Math,</strong> at Northeastern University. I'm passionate about the intersection of software and the brain, especially computational modeling of neural systems.</p>
+        <p>Through <strong>co-op experiences</strong> in research labs and software development, I've built full-stack applications, automated complex molecular dynamics pipelines, written agentic AI tools to streamline computational workflows, and developed programs to simulate molecular behavior. I prioritize clean, scalable code and thrive working across interdisciplinary teams.</p>
         <p>I'm currently seeking co-op and internship opportunities for Spring 2027, particularly in <strong>software engineering, research engineering, or health tech</strong> where I can contribute to meaningful, innovative work.</p>
         <p>Outside of academics, I recharge with yoga, surfing, and walking my dog on the beach.</p>
       </div>
@@ -111,7 +111,13 @@
           <div>
             <div class="exp-title">Computational Biology Researcher (Software Development)</div>
             <div class="exp-company">Dong Theoretical and Computational Chemistry Lab · Boston, MA</div>
-            <div class="exp-desc">I develop scalable, object-oriented Python programs to automate molecular dynamics simulations and quantum chemistry workflows, significantly increasing throughput and reducing manual setup. By applying software engineering best practices, such as version control, modular design, and comprehensive documentation, I create maintainable tools used across lab projects. I also design statistical algorithms to validate model predictions and optimize data processing, collaborating closely with chemists to translate complex scientific requirements into reliable software solutions.</div>
+            <div class="exp-desc">
+              I develop scalable, object-oriented Python programs to automate molecular dynamics simulations and quantum chemistry workflows,
+              significantly increasing throughput and reducing manual setup. By applying software engineering best practices, such as version control,
+              modular design, and comprehensive documentation, I create maintainable tools used across lab projects. I also design statistical algorithms
+              to validate model predictions and optimize data processing, collaborating closely with chemists to translate complex scientific requirements into
+              reliable software solutions.
+            </div>
             <div class="exp-tags">
               <span class="tag">Python</span>
               <span class="tag">Bash</span>
@@ -143,6 +149,36 @@
     <section id="projects">
       <span class="section-label">Projects</span>
       <div class="proj-list">
+
+        <a class="proj-item" href="https://github.com/mwanta/whats-for-dinner">
+          <div class="proj-img">
+            <img src="images/whats_for_dinner.png" alt="What's for Dinner">
+          </div>
+          <div>
+            <div class="proj-title">What's for Dinner
+              <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+            </div>
+            <div class="proj-desc">A full-stack mobile meal and workout planning app powered by an agentic AI layer that generates
+              personalized weekly plans based on macro targets, dietary preferences, and essential amino acid completeness. Completed
+              features include a Hono/TypeScript REST backend with a class-based service layer, shared TypeScript type definitions between
+              frontend and backend, Supabase with pgvector, JWT authentication, and a full onboarding flow built in Expo and React
+              Native that captures dietary preferences, self-reported deficiencies, injuries, cooking constraints, and workout
+              preferences. In progress: real-time SSE streaming, a Groq-powered agentic meal recommendation engine with tool use,
+              injury-aware workout scheduling with nutrition-recovery connections, and a FastAPI contextual bandit personalization
+              sidecar that adapts recommendations over time.
+            </div>
+            <div class="proj-tags">
+              <span class="tag">TypeScript</span>
+              <span class="tag">Python</span>
+              <span class="tag">React Native</span>
+              <span class="tag">Expo</span>
+              <span class="tag">Hono</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Supabase</span>
+            </div>
+          </div>
+        </a>
 
         <a class="proj-item" href="https://github.com/mwanta/protein-dashboard">
           <div class="proj-img">
