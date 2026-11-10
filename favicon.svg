@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Simplified neuron on a diagonal: branching dendrites top-left, soma, axon to terminal boutons
+       bottom-right. Thick strokes so it still reads at 16px. -->
+  <rect width="32" height="32" rx="7" fill="#fdf9f7"/>
+  <g fill="none" stroke="#9b3d6e" stroke-width="2.2" stroke-linecap="round">
+    <!-- dendrites -->
+    <path d="M10 10 L4 3.5"/>
+    <path d="M7 6.8 L3 8"/>
+    <path d="M10 10 L12.5 2.5"/>
+    <path d="M10 10 L2.5 13"/>
+    <path d="M10 10 L17.5 5.5"/>
+    <!-- axon -->
+    <path d="M12 12 L22 22"/>
+    <!-- terminals -->
+    <path d="M22 22 L21.5 28.5"/>
+    <path d="M22 22 L28.5 21.5"/>
+    <path d="M22 22 L26.8 26.8"/>
+  </g>
+  <circle cx="10.5" cy="10.5" r="4.4" fill="#c4547a"/>
+  <circle cx="21.4" cy="28.6" r="1.9" fill="#c4547a"/>
+  <circle cx="28.6" cy="21.4" r="1.9" fill="#c4547a"/>
+  <circle cx="27.2" cy="27.2" r="1.9" fill="#c4547a"/>
+</svg>
