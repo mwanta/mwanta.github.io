@@ -46,7 +46,7 @@
       <a href="https://www.linkedin.com/in/meredithwanta" title="LinkedIn" aria-label="LinkedIn">
         <svg viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
       </a>
-      <a href="mailto:wanta.m@northeastern.edu" title="Email" aria-label="Email">
+      <a href="mailto:mewanta@icloud.com" title="Email" aria-label="Email">
         <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
       </a>
     </div>
@@ -77,7 +77,6 @@
             <li>JavaScript</li>
             <li>SQL</li>
             <li>Bash</li>
-            <li>C++</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -104,7 +103,7 @@
             <li>pytest</li>
             <li>Jupyter</li>
             <li>Sphinx</li>
-            <li>Intellij IDEA</li>
+            <li>IntelliJ IDEA</li>
             <li>PyCharm</li>
             <li>VS Code</li>
           </ul>
@@ -135,7 +134,7 @@
             <div class="exp-title">Software Engineer</div>
             <div class="exp-company">Generate Product Development Studio · Boston, MA</div>
             <div class="exp-desc">
-              <p>Building a <strong>Go REST API and React frontend</strong> college admissions platform for Inspirate Consulting that replaces email-based coordination between students and counselors. Team of 5 engineers, 2 tech leads and 4 designers.</p>
+              <p>Generate is a student organization that builds real software for real clients. I'm building the <strong>Go REST API and React frontend</strong> for a college admissions platform for Inspirate Consulting that replaces email-based coordination between students and counselors. Team of 5 engineers, 2 tech leads and 4 designers.</p>
               <ul>
                 <li>Implemented <strong>typo-tolerant fuzzy college search</strong> with PostgreSQL <strong>pg_trgm</strong></li>
                 <li>Developed application tracking, college ranking with input validation, and <strong>role-based</strong> student and counselor views</li>
@@ -163,18 +162,21 @@
             <div class="exp-desc">
               <ul>
                 <li>Built an <strong>end-to-end molecular imprinting simulation pipeline</strong> (polymer crosslinking, template removal, catalytic substitution, multi-ligand docking, QM/MM analysis) with GROMACS, Packmol and ORCA</li>
+                <li>Authored a package automating <strong>active-space selection</strong> for upcoming <strong>OpenMolcas</strong> integration, implementing 8 postdoc-designed protocols as interchangeable strategies (<strong>Strategy pattern</strong>) that can run in any combination</li>
                 <li>Engineered a <strong>SLURM + Dask job manager</strong> that runs as many simulations in parallel as the cluster allows, <strong>detects failures, restarts jobs</strong> and submits each next step automatically, replacing <strong>manual tracking of 24+ hour jobs</strong></li>
                 <li>Developed an <strong>agentic AI tool</strong> (OpenAI API) that selects and sequences GROMACS and ORCA tools to assemble multi-step workflows from a researcher's goal</li>
-                <li>Wrote <strong>pytest</strong> suites run automatically in <strong>GitHub Actions CI</strong></li>
+                <li>Wrote <strong>pytest</strong> suites run automatically in <strong>GitHub Actions CI</strong>, and documented the automation workflow with <strong>Sphinx</strong></li>
               </ul>
             </div>
             <div class="exp-tags">
               <span class="tag">Python</span>
               <span class="tag">SLURM (HPC)</span>
               <span class="tag">Dask</span>
+              <span class="tag">OpenMolcas</span>
               <span class="tag">OpenAI API</span>
               <span class="tag">pytest</span>
               <span class="tag">GitHub Actions</span>
+              <span class="tag">Sphinx</span>
             </div>
           </div>
         </div>
@@ -249,7 +251,7 @@
               <ul>
                 <li><strong>Parallel async fan-out</strong> across four biomedical APIs (RCSB, UniProt, ChEMBL, Open Targets)</li>
                 <li><strong>ML similarity search</strong> with Meta's <strong>ESM-2</strong> protein language model, served from a FastAPI sidecar and queried by <strong>pgvector cosine similarity</strong></li>
-                <li>Spring Boot and React with JWT auth and a hybrid JPA/JdbcTemplate persistence layer on Supabase</li>
+                <li>Spring Boot and React with JWT auth and a hybrid JPA/JdbcTemplate persistence layer, running locally on Supabase</li>
                 <li><strong>One-click AWS deployment</strong> with GitHub Actions: Terraform-provisioned infrastructure, commit-tagged Docker images in ECR, and EC2-backed ECS with RDS</li>
               </ul>
             </div>
@@ -265,30 +267,6 @@
                 <span class="tag">Terraform</span>
                 <span class="tag">AWS ECS</span>
                 <span class="tag">GitHub Actions</span>
-            </div>
-          </div>
-        </a>
-
-        <a class="proj-item" href="https://github.com/mwanta/clock-sync">
-          <div class="proj-img">
-            <img src="images/clock-sync.png" alt="Clock Synchronization Component">
-          </div>
-          <div>
-            <div class="proj-title">Clock Synchronization Component
-              <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
-            </div>
-            <div class="proj-desc">
-              <p>Time synchronization for CubeSat flight software at Northeastern’s Satellite Lab, built in C++ on NASA's <strong>F Prime</strong> framework.</p>
-              <ul>
-                <li><strong>Microsecond-accurate</strong> sync in two modes: ground station commands and <strong>GPS PPS signals</strong></li>
-                <li>Integrated <strong>Linux PPS kernel support</strong> for reliable deployment on Raspberry Pi</li>
-              </ul>
-            </div>
-            <div class="proj-tags">
-              <span class="tag">C++</span>
-              <span class="tag">F Prime</span>
-              <span class="tag">Linux</span>
-              <span class="tag">Raspberry Pi</span>
             </div>
           </div>
         </a>
