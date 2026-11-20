@@ -82,12 +82,13 @@
         <div class="skill-group">
           <div class="skill-group-label">Frameworks/Libraries</div>
           <ul>
-            <li>React</li>
-            <li>React Native</li>
             <li>Spring Boot</li>
             <li>FastAPI</li>
-            <li>Express</li>
+            <li>Flask</li>
+            <li>Huma</li>
             <li>Hono</li>
+            <li>React</li>
+            <li>React Native</li>
             <li>Dask</li>
             <li>scikit-learn</li>
             <li>OpenAI API</li>
@@ -96,16 +97,13 @@
         <div class="skill-group">
           <div class="skill-group-label">Databases &amp; Tools</div>
           <ul>
-            <li>PostgreSQL</li>
+            <li>PostgreSQL (pgvector, pg_trgm)</li>
+            <li>MySQL</li>
             <li>Supabase</li>
-            <li>pgvector</li>
             <li>Git / GitHub</li>
             <li>pytest</li>
-            <li>Jupyter</li>
+            <li>Jupyter Notebook</li>
             <li>Sphinx</li>
-            <li>IntelliJ IDEA</li>
-            <li>PyCharm</li>
-            <li>VS Code</li>
           </ul>
         </div>
         <div class="skill-group">
@@ -134,9 +132,10 @@
             <div class="exp-title">Software Engineer</div>
             <div class="exp-company">Generate Product Development Studio · Boston, MA</div>
             <div class="exp-desc">
-              <p>Generate is a student organization that builds real software for real clients. I'm building the <strong>Go REST API and React frontend</strong> for a college admissions platform for Inspirate Consulting that replaces email-based coordination between students and counselors. Team of 5 engineers, 2 tech leads and 4 designers.</p>
+              <p>Generate is a student organization that builds real software for real clients. I'm building the <strong>Go REST API with Huma and React frontend</strong> for a college admissions platform for Inspirate Consulting that replaces email-based coordination between students and counselors. Team of 5 engineers, 2 tech leads and 4 designers.</p>
               <ul>
                 <li>Implemented <strong>typo-tolerant fuzzy college search</strong> with PostgreSQL <strong>pg_trgm</strong></li>
+                <li>Wrote the <strong>RAG backend</strong> for a co-built <strong>Gemini</strong> assistant that summarizes past tasks and messages: <strong>Qwen3-Embedding-0.6B</strong> vectors are generated in a feature-flagged <strong>Supabase Edge Function</strong> and stored in a join table, and a retrieval workflow embeds each user prompt and returns the 10 most relevant items by <strong>pgvector cosine similarity</strong></li>
                 <li>Developed application tracking, college ranking with input validation, and <strong>role-based</strong> student and counselor views</li>
                 <li>Built video upload and delivery for learning content in <strong>Go</strong>, storing media in <strong>AWS S3</strong> using the <strong>AWS SDK for Go</strong></li>
                 <li>Ship every feature through pull request review by the tech leads</li>
@@ -144,8 +143,11 @@
             </div>
             <div class="exp-tags">
               <span class="tag">Go</span>
+              <span class="tag">Huma</span>
               <span class="tag">React</span>
               <span class="tag">PostgreSQL</span>
+              <span class="tag">pgvector</span>
+              <span class="tag">RAG</span>
               <span class="tag">AWS S3</span>
             </div>
           </div>
@@ -219,10 +221,10 @@
               <svg viewBox="0 0 24 24"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
             </div>
             <div class="proj-desc">
-              <p>Full-stack mobile meal and workout planner with an <strong>agentic AI layer</strong> that generates personalized weekly plans from macro targets, dietary preferences and essential amino acid completeness.</p>
+              <p>Full-stack mobile meal planner helping plant-based users meet daily targets for all 9 essential amino acids.</p>
               <ul>
                 <li><strong>Hono/TypeScript REST backend</strong> with a class-based service layer and <strong>shared types</strong> between frontend and backend; Supabase with pgvector; JWT auth</li>
-                <li><strong>Expo / React Native</strong> onboarding that captures diet, deficiencies, injuries, cooking constraints and workout preferences</li>
+                <li><strong>Expo / React Native</strong> onboarding that captures diet, deficiencies, cooking constraints and food preferences</li>
                 <li><span class="desc-label">In progress</span> Groq-powered <strong>agentic recommendation engine with tool use</strong>, real-time SSE streaming, injury-aware workout scheduling, and a FastAPI <strong>contextual bandit</strong> sidecar that adapts recommendations over time</li>
               </ul>
             </div>
